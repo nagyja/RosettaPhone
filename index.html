@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Rosetta Phone</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Start your project here-->
+    <div style="height: 100vh" >
+    
+    <!-- NAVBAR -->
+        <nav class="navbar navbar-fixed-left navbar-minimal animate animated fadeIn" role="navigation">
+                <div class="navbar-toggler animate">
+                    <span class="menu-icon"></span>
+                </div>
+                <ul class=" navbar-menu animate">
+                        <li><a href="#">Home</a></li>
+                        <li ><a href="#">Profile</a></li>
+                        <li ><a href="#">Messages</a></li>
+                        
+                        <li><a href="#">Home</a></li>
+                        <li ><a href="#">Profile</a></li>
+                        <li ><a href="#">Messages</a></li> 
+                </ul>
+        </nav>
+    <!-- END-NAVBAR -->
+
+   <!-- Screen 1 -->
+        <div class="flex-center flex-column screen1">
+        
+            <h1 class="animated fadeIn mb-2 screen1">Rosetta Phone</h1>
+
+            <img class= "animated fadeIn mb-2 screen1" id="timHiBubble" src="img/timHiBubble.png" alt="rabbit">
+
+            <div class="md-form name">
+                <input type="text" id="name" class="form-control" value="">
+                <label for="name" class="animated fadeIn">What is your name?</label>
+                <a id="go" class="btn btn-warning btn-rounded">GO!</a>
+            </div>
+        </div>   
+    <!-- END-Screen 1 -->
+
+    <!-- Screen 2 -->
+        
+        <div id="screen2" class="screen2">
+            <h3 id="hi"></h3>   
+            
+            <div class="image-upload screen2">
+                <label class="p-2" for="file-input">
+                    <img class= "animated  screen2" id="camera" src="img/camera.png" alt="camera">
+                </label>
+                <input name="userImage" id="file-input" type="file" accept="image/*" capture="camera">
+            </div>
+            <div class="screen2" id="timArrowDiv">
+                <img class= "animated fadeIn screen2" id="timArrow" src="img/timArrow.png" alt="timArrow">  
+                <h3 id="screen2text"> Take a photo of something to begin </h3>
+            </div>
+        </div>
+    <!-- END-Screen 2 -->
+    
+    <!-- Screen 3 -->          
+        <div id="image" class="screen3"></div> 
+        <div class="row screen3">        
+            <div class="col-md-6">
+
+                <!--WORD 1-->
+                <div id="word1" class="card card-primary text-center z-depth-2 animated">
+                    <div class="card-block">
+                        <p id="w1selected" class="white-text">Loading...</p>
+                    </div>
+                </div>
+                <!--/.WORD1-->
+
+
+                <!--Word2-->
+                <div id="word2" class="card card-success text-center z-depth-2 animated">
+                    <div class="card-block">
+                        <p id="w2selected" class="white-text">Loading...</p>
+                    </div>
+                </div>
+                <!--/.Word2-->
+
+            </div>
+
+            <div class="col-md-6">
+
+                <!--Word3-->
+                <div id="word3" class="card card-info text-center z-depth-2 animated">
+                    <div class="card-block">
+                        <p id="w3selected" class="white-text">Loading...</p>
+                    </div>
+                </div>
+                <!--/.Word3-->
+
+                <!--Word 4-->
+                <div id="word4" class="card default-color text-center z-depth-2 animated">
+                    <div class="card-block">
+                        <p id="w4selected" class="white-text">Loading...</p>
+                    </div>
+                </div>
+                <!--/.Word 4-->
+
+                <!--Spanish Word-->
+                <div id="spanishWord" class="card default-color text-center z-depth-2 animated">
+                    <div class="card-block">
+                        <p id="spokenSpanish" class="white-text">Loading...</p>
+                        <audio id="audioPlayer" controls="controls">
+                        </audio>
+                    </div>
+                </div>
+                <!--/.Spanish Word-->
+
+            </div>
+        </div>
+        <p class="screen3 animated" id="chooseWord">Choose one word to learn in Spanish</p>
+        <p class="animated" id="learnedWord">Great job! You learned a word in Spanish!</p>
+        <a id="again" class="btn btn-warning btn-rounded">Next Word</a>
+
+            
+
+    <!-- END-Screen 3 -->
+       
+
+        
+
+    </div>
+    <!-- /Start your project here-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/tether.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!--Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+    <!--VOICERRS-->
+    <script src='js/jquery.voicerss-tts.min.js'></script>
+    <!-- MY JavaScript -->
+    <script type="text/javascript" src="js/javascript.js"></script>
+</body>
+
+</html>
